@@ -23,7 +23,7 @@ soup.encode('utf-8')
 
 #print(soup.prettify())
 
-# function to check if the price has dropped below 20,000
+# function to check if the price has dropped below 1,80,000
 def check_price():
   title = soup.find(id= "productTitle").get_text()
   price = soup.find(id = "priceblock_ourprice").get_text().replace(',', '').replace('₹', '').replace(' ', '').strip()
